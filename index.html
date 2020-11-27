@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ciclo de la motivación</title>
+<link type="text/css" rel="stylesheet" href="estilacho.css">
+<script type='text/javascript' src='jquery-1.7.1.min.js'></script>
+<script type="text/javascript">
+
+function muevete(){
+		$("#todo").animate({"left":"0px", "top":"0px" }, "slow");
+	};
+function muevete1(){
+		$("#todo").animate({"left":"0px", "top":"190px" }, "slow");
+	};
+function muevete2(){
+		$("#todo").animate({"left":"-170px", "top":"20px" }, "slow");
+	};
+function muevete3(){
+		$("#todo").animate({"left":"-20px","top":"-250px"}, "slow");
+	};	
+function muevete4(){
+		$("#todo").animate({"left":"20px","top":"-250px"}, "slow");		
+	};
+function muevete5(){
+		$("#todo").animate({"left":"100px","top":"150px"}, "slow");		
+	};	
+
+function muestra1(){
+		$("#s1").show();
+		};
+function muestra2(){
+		$("#s2").show();
+		};
+function muestra3(){
+		$("#s3").show();
+		};
+function muestra4(){
+		$("#s4").show();
+		};		
+function muestra5(){
+		$("#s5").show();
+		};		
+
+function oculta1(){
+		$("#s1").hide();
+	};
+function oculta2(){
+		$("#s2").hide();
+	};
+function oculta3(){
+		$("#s3").hide();
+	};
+function oculta4(){
+		$("#s4").hide();
+	};	
+function oculta5(){
+		$("#s5").hide();
+	};		
+
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div id="todo">
+    <div id="centro" onclick="muevete(), oculta1(), oculta2(), oculta3(), oculta4(), oculta5()"></div>
+    <div id="b1" onclick="muevete1(), muestra1(), oculta2(), oculta3(), oculta4(), oculta5()"></div>
+    <div id="b2" onclick="muevete2(), muestra2(), oculta1(), oculta3(), oculta4(), oculta5()"></div>
+    <div id="b3" onclick="muevete3(), muestra3(), oculta1(), oculta2(), oculta4(), oculta5()"></div>
+    <div id="b4" onclick="muevete4(), muestra4(), oculta1(), oculta2(), oculta3(), oculta5()"></div>
+    <div id="b5" onclick="muevete5(), muestra5(), oculta1(), oculta2(), oculta3(), oculta4()"></div>
+    <div id="s1"></div>
+    <div id="s2"></div>
+    <div id="s3"></div>
+    <div id="s4"></div>
+    <div id="s5"></div>
+  </div>
+</div>
+</html>
